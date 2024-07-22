@@ -23,8 +23,7 @@ jobs:
               run: npm install
             - name: Setup Project
               run:
-                php artisan config:clear
-                php artisan cache:clear
+                php artisan optimize
                 php artisan key:generate
                 npm run build
             - name: Deploy to Server
