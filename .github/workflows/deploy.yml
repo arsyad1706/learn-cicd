@@ -19,8 +19,6 @@ jobs:
               run: cp .env.example .env
             - name: Update composer Dependencies
               run: composer update
-            - name: Install composer Dependencies
-              run: composer install
             - name: Install node dependencies
               run: npm install
             - name: Generate Key
@@ -35,4 +33,4 @@ jobs:
                 username: ${{ secrets.SSH_USERNAME }}
                 key: ${{ secrets.SSH_KEY }}
                 script_stop: true
-                script: whoami
+                script: ls -la
