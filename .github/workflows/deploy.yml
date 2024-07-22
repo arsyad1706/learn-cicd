@@ -35,6 +35,4 @@ jobs:
                 username: ${{ secrets.SSH_USERNAME }}
                 key: ${{ secrets.SSH_KEY }}
                 script_stop: true
-                script:
-                    cd htdocs/learn-cicd.baratech.co.id
-                    node -v
+                script: whoami
