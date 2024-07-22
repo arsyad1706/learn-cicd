@@ -20,7 +20,7 @@ jobs:
             - name: Install composer Dependencies
               run: composer update
             - name: Install node dependencies
-              run: npm ci
+              run: npm install
             - name: Setup Project
               run:
                 php artisan config:clear
