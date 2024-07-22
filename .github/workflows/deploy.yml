@@ -17,8 +17,10 @@ jobs:
                 node-version: 20
             - name: Copy .env
               run: cp .env.example .env
-            - name: Install composer Dependencies
+            - name: Update composer Dependencies
               run: composer update
+            - name: Install composer Dependencies
+              run: composer install
             - name: Install node dependencies
               run: npm install
             - name: Setup Project
